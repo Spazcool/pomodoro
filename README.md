@@ -1,4 +1,4 @@
-# freeCodeCamp JS pomodoro (tomato timer)
+# Pomodoro (tomato timer)
 
 This is my pomodoro timer, created using JavaScript/jQuery, CSS & HTML as one of the final projects to freeCodeCamp's frontend development program.
 
@@ -16,7 +16,7 @@ No installation required.
 
 ## Built With
 
-* jQuery
+* JS & jQuery
 * HTML
 * CSS
 
