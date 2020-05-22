@@ -9,7 +9,7 @@ This is my pomodoro timer, created using JavaScript/jQuery, CSS & HTML as one of
 
 ## Getting Started
 
-Host locally after download or check out the one hosted on my site [Pomodoro](http://www.spazcool.com/pomo/)
+Host locally after download or check out the one hosted on my site [Pomodoro](http://www.spazcool.com/pomodoro)
 
 ### Prerequisites
 
