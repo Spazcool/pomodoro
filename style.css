@@ -1,0 +1,135 @@
+body{
+	color: black;
+	font-size: 1.5em;
+	background: white;
+	background: -webkit-radial-gradient(circle, white, pink, black);
+	background: -o-radial-gradient(circle, white, pink, black);
+	background: -moz-radial-gradient(circle, white, pink, black);
+	background: radial-gradient(circle, white, gray, black);
+	background-repeat:no-repeat;
+	background-size:100vw 1000vh;
+	max-width: 100vw;
+	overflow-x: hidden;
+
+}
+
+#title {
+	width: 100%;
+	text-shadow: -1px -1px 0 #990000, 1px -1px 0 #990000, -1px 1px 0 #990000, 1px 1px 0 #990000;
+	font-family: 'Orbitron', "sans-serif";
+	color: #440033;
+	text-align: center;
+}
+
+#screenHold {
+	margin: 6.5% auto;
+	left: 0;
+	right: 0;
+	width: 284px;
+	height: 284px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background-color: black;
+	border: 2px solid red;
+}
+
+#screen {
+	margin: 0.5% auto;
+	left: 0;
+	right: 0;
+	height: 275px;
+	width: 275px;
+	padding-top: 30%;
+	color: red;
+	font-family: "Orbitron", "sans-serif";
+	font-size: 3em;
+	overflow-wrap: break-word;
+	text-align: center;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background: black;
+	background: -webkit-radial-gradient(circle, #660000, #330000,black);
+    background: -o-radial-gradient(circle, #660000, #330000,black);
+    background: -moz-radial-gradient(circle, #660000, #330000, black);
+    background: radial-gradient(circle, #660000, #330000, black);
+}
+
+#slide{
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 80%;
+}
+#tooltip{
+	width: 100%;
+	background-color: black;
+}
+
+#custom-handle  {
+    background-color:  #990000;
+}
+
+.buttons{
+	margin-top: 10vh;
+}
+
+#pause,
+#work {
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 40%;
+	background-color: inherit;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	text-shadow: -1px -1px 0 #990000, 1px -1px 0 #990000, -1px 1px 0 #990000, 1px 1px 0 #990000;
+	font-family: 'Orbitron', "sans-serif";
+	color: #440033;
+}
+
+#pause:hover {
+	background-color: white;
+	color: white;
+	filter: invert(100);
+}
+
+#work:hover {
+	background-color: white;
+	color: white;
+	filter: invert(100);
+}
+
+.footsy {
+	color: white;
+	font-size: 3em;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background-color: #220000;
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	margin: 1.5% auto;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	border: 2px solid #990000;
+}
+
+.footsy:hover{
+	background-color: #221133;
+}
+
+@media only screen and (min-width: 600px){
+	#title{
+		font-size: 6em;
+	}
+
+	#pause,
+	#work {
+		height: 10%;
+	}
+}

@@ -1,58 +1,49 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title id="timer">00:00 Pomodoro</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif|Black+Ops+One|Bungee|Six+Caps|Geo|Orbitron|Press+Start+2P|Revalia|Merriweather+Sans|Orbitron|Yanone+Kaffeesatz" />
+		<link type="text/css" rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />	
+		<link type="text/css" rel="stylesheet" href="style.css" />
+	</head>
 
-<head>
-	<title id="kitten">00:00 Pomodoro</title>
-	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif|Black+Ops+One|Bungee|Six+Caps|Geo|Orbitron|Press+Start+2P|Revalia|Merriweather+Sans|Orbitron|Yanone+Kaffeesatz" />
-	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-	<link type="text/css" rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-	<link type="text/css" rel="stylesheet" href="pomo-style.css" />
+	<body>
+		<header class="row justify-content-md-center">
+			<h1 class="col-xs-12" id="title">POMODORO</h1>
+		</header>
+		<main class="container-fluid">
 
-	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
-	<script type="text/javascript" src="pomo.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
-</head>
-
-<body>
-	<div class="workspace">
-		<div class="header">
-			<div class="title">
-				POMODORO
+			<div class="row justify-content-md-center" id="workspace">
+				<div class="col-xs-12" id="screenHold">
+					<div id="screen"></div>
+				</div>
 			</div>
-		</div>
-		<div class="screenHold">
-			<div class="" id="screen">
-			</div>
-		</div>
-		<div id="daHolder">
-			<div id="red">
-				<div class="slide">
-					<div id="tooltip2">
-						<div id="custom-handle" class="ui-slider-handle">
-						</div>
+
+			<div class="row justify-content-md-center controls">
+				<div class="col-xs-12" id="slide">
+					<div id="tooltip">
+						<div id="custom-handle" class="ui-slider-handle"></div>
 					</div>
 				</div>
 			</div>
-			<div id="blue">
-				<div id="blueTop">
-					<div class="btn" id="pause">
-						<div id="spinP">PAUSE</div>
-					</div>
-				</div>
-				<div id="blueBottom">
-					<div class="btn" id="work">
-						<div id="spin">START</div>
-					</div>
-				</div>
+
+			<div class="row justify-content-sm-center buttons">
+				<button class="col-xs-6" id="pause">PAUSE</button>
+				<button class="col-xs-6" id="work">START</button>
 			</div>
-		</div>
-	</div>
-	<!--END OF WORKSPACE-->
-	<a href="http://www.spazcool.com/" target="blank">
-		<div class="footsy col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		</div>
-	</a>
-</body>
+		</main>
+
+		<a href="http://www.spazcool.com/" target="blank">
+			<div class="footsy col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+		</a>
+
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="pomo.js"></script>
+	</body>
 
 </html>

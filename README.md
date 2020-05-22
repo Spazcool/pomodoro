@@ -2,6 +2,11 @@
 
 This is my pomodoro timer, created using JavaScript/jQuery, CSS & HTML as one of the final projects to freeCodeCamp's frontend development program.
 
+<p align="center">
+   <img width="70%" height="300vh" src="./images/desktop.gif">
+   <img width="20%" height="300vh" src="./images/mobile.gif">
+</p>
+
 ## Getting Started
 
 Host locally after download or check out the one hosted on my site [Pomodoro](http://www.spazcool.com/pomo/)
@@ -18,7 +23,7 @@ No installation required.
 
 * JS & jQuery
 * HTML
-* CSS
+* CSS & Bootstrap
 
 ## Authors
 

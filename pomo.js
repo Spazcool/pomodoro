@@ -4,13 +4,13 @@ $(document).ready(function() {
         workLength = 0,
         pausedWorkLength = 0,
         objInterval = 0,
-        bob = 0,
+        titleTimer = 0,
         tester = 30,
         pauseCount = 0,
         breakCount = 0;
 
-    $("#tooltip2").slider({
-        orientation: "vertical",
+    $("#tooltip").slider({
+        orientation: "horizontal",
         range: "min",
         min: 1,
         max: 60,
@@ -28,7 +28,7 @@ $(document).ready(function() {
         var seconds = 0;
         minutes = Math.floor(secs / 60);
         seconds = (secs % 60).toFixed(0);
-        $("#tooltip2").slider({
+        $("#tooltip").slider({
             step: 1,
             value: minutes
         });
@@ -50,10 +50,10 @@ $(document).ready(function() {
             him = workLength;
         }
         //CHANGE THE RAW MILLISECOND TIME TO HUMAN READABLE
-        bob = millisToMinutesAndSeconds(him);
+        titleTimer = millisToMinutesAndSeconds(him);
         //POST HUMAN READABLE TO THE SCREEN
-        document.getElementById("screen").innerHTML = bob;
-        document.getElementById("kitten").innerHTML = bob + " Pomodoro";
+        document.getElementById("screen").innerHTML = titleTimer;
+        document.getElementById("timer").innerHTML = titleTimer + " Pomodoro";
         //BREAK TIME
         if (him < 1) {
             chime();
@@ -81,10 +81,10 @@ $(document).ready(function() {
                 pausedWorkLength = workLength;
             }
             pauseCount += 1;
-            $("#spinP").html("");
+            $("#pause").html("");
             //UNPAUSE
             if (pauseCount % 2 === 0) {
-                $("#spinP").html("PAUSE");
+                $("#pause").html("PAUSE");
                 if (breakCount % 2 === 0) {
                     breakLength = pausedWorkLength;
                     breakCount -= 1;
@@ -96,25 +96,25 @@ $(document).ready(function() {
                 }
                 //PAUSE
             } else {
-                $("#spinP").html("PAUSED");
+                $("#pause").html("PAUSED");
                 clearInterval(objInterval);
             }
         }
     }
 
     //STARTS HERE WITH THE INPUTS
-    $(".btn").click(function() {
+    $("button").click(function() {
         switch (this.id) {
             case "pause":
                 pushPend("pause");
                 break;
             case "work":
-                staticWorkLength = $("#tooltip2").slider("option", "value") * 60;
+                staticWorkLength = $("#tooltip").slider("option", "value") * 60;
                 workLength = staticWorkLength;
                 breakLength = staticWorkLength / 6;
                 pauseCount = 0;
                 breakCount = 0;
-                $("#spinP").html("PAUSE");
+                $("#pause").html("PAUSE");
                 startcountdown(workLength);
                 break;
         }
